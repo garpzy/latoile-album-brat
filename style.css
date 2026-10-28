@@ -4,7 +4,8 @@
 }
 
 .crash-page {
-    --accent-color: red; 
+    --main-text-color: red;
+    --accent-color: rgb(0,0,0); 
 }
 
 *{
@@ -52,5 +53,13 @@ nav ul li a:hover::after{
 }
 
 img{
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    left: 0;
     width: 100%;
 }

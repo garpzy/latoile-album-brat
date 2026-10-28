@@ -67,4 +67,9 @@ ol li::marker {
 body.brat-page {
     background-image: url(assets/brat-summer.png);
     background-size: cover;
-}   
+}
+
+body.crash-page{
+    background-image: url(assets/crash-charli.jpg);
+    background-size: cover;
+}
