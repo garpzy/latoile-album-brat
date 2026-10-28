@@ -6,6 +6,12 @@ body{
     background-size: cover;
 }
 
+h1.surligne {
+    background-color: #85c803;
+    color: black;
+    padding: 0 10px;
+}
+
 nav{
     padding: 10px;
 }
@@ -53,6 +59,7 @@ ol li::marker {
   color: #85c803;
   font-weight: bold;
   font-size: 1.2rem;
+  background-color: #000;
 }
 
 .surligne{
