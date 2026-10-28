@@ -3,6 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     background-image: url("assets/brat-summer.png");
+    background-size: cover;
 }
 
 nav{
@@ -48,7 +49,29 @@ section{
     gap: 20px;
 }
 
-.songs li:hover{
+ol li::marker {
+  color: #85c803;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.surligne{
+    background-color: #85c803;
+    color: #000;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 4px;
+}
+
+.surligne:hover{
     background-color: #000;
     color: #85c803;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 4px; 
+}
+
+.left{
+    width: 30vw;
+    padding: 20px;
 }
