@@ -1,3 +1,29 @@
 body{
     background-image: none;
+    background-color: black;
+}
+
+nav ul li a{
+   color: white; 
+}
+
+nav ul li a::after{
+    background: #fff;
+}
+
+.albums{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.albums div{
+    display: flex;
+    padding: 10px;
+    width: 25%;
+}
+
+main.discographie {
+    display: flex;
+    justify-content: center;
 }

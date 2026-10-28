@@ -1,14 +1,32 @@
+:root{
+    --main-text-color: #000;
+}
+
+*{
+        box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    background-image: url("assets/brat-summer.png");
+    background-image: url(assets/brat-summer.png);
     background-size: cover;
+}   
+
+.surligne{
+    background-color: #85c803;
+    color: #000;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 4px;
 }
 
-h1.surligne {
-    background-color: #85c803;
-    color: black;
-    padding: 0 10px;
+.surligne:hover{
+    background-color: #000;
+    color: #85c803;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 4px; 
 }
 
 nav{
@@ -25,7 +43,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: var(--main-text-color);
 }
 
 nav ul li a::after{
@@ -33,7 +51,7 @@ nav ul li a::after{
     display: block;
     height: 3px;
     width: 0;
-    background: black;
+    background: var(--main-text-color);
     transition: width 0.3s;
 }
 
@@ -65,13 +83,11 @@ nav.ariane ul li a::after{
 }
 
 img{
-    /* width: 100%;
-    height: auto; */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)  ;
-    width: 80%;
+    width: 100%;
 }
 
-section{
+section.brat{
     display: flex;
     gap: 20px;
 }
@@ -83,22 +99,6 @@ ol li::marker {
   background-color: #000;
 }
 
-.surligne{
-    background-color: #85c803;
-    color: #000;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 0 4px;
-}
-
-.surligne:hover{
-    background-color: #000;
-    color: #85c803;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 0 4px; 
-}
-
 .left{
     width: 30vw;
     padding: 20px;
@@ -107,21 +107,4 @@ ol li::marker {
 .right{
     width: 50vw;
     padding: 20px;
-}
-
-.albums{
-    display: flex;
-    width: 70vw;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.albums div{
-    display: flex;
-    width: 25%;
-}
-
-main.discographie {
-    display: flex;
-    justify-content: center;
 }
