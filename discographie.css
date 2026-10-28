@@ -1,14 +1,7 @@
-body{
-    background-image: none;
+.discographie-page {
+    --main-text-color: #FFF;
     background-color: black;
-}
-
-nav ul li a{
-   color: white; 
-}
-
-nav ul li a::after{
-    background: #fff;
+    background-image: none;
 }
 
 .albums{
