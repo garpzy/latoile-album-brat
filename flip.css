@@ -1,0 +1,45 @@
+/* Conteneur principal avec perspective 3D */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Donne la profondeur 3D */
+}
+
+/* Élément interne qui effectue la rotation */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Indique que les enfants sont en 3D */
+}
+
+/* Déclenchement de la rotation au survol */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Style commun pour le recto et le verso */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Masque le dos pendant la rotation */
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Positionnement du verso déjà retourné à 180° */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Ajustement des images */
+.flip-card-front img, .flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,9 +1,15 @@
 .brat-page {
     --main-text-color:#000;
+    --accent-color:#85c803;
 }
 
 *{
         box-sizing: border-box;
+}
+
+a{
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -14,16 +20,16 @@ body{
 }   
 
 .surligne{
-    background-color: #85c803;
-    color: #000;
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     padding: 0 4px;
 }
 
 .surligne:hover{
-    background-color: #000;
-    color: #85c803;
+    background-color: var(--main-text-color);
+    color: var(--accent-color);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     padding: 0 4px; 
@@ -87,16 +93,16 @@ img{
     width: 100%;
 }
 
-section.brat{
+section.album-section{
     display: flex;
     gap: 20px;
 }
 
 ol li::marker {
-  color: #85c803;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 1.2rem;
-  background-color: #000;
+  background-color: var(--main-text-color);
 }
 
 .left{
@@ -107,4 +113,8 @@ ol li::marker {
 .right{
     width: 50vw;
     padding: 20px;
+}
+
+p.description {
+    
 }
