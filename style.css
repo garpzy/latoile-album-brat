@@ -2,7 +2,7 @@ body{
     background-color: #85c803;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    background-image: url("https://www.midiaresearch.com/storage/uploads/blog/featured/2220/cover_image-1718288666.jpg");
+    background-image: url("assets/brat-summer.png");
 }
 
 nav{
@@ -40,6 +40,7 @@ img{
     /* width: 100%;
     height: auto; */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)  ;
+    width: 300px;
 }
 
 section{
@@ -48,5 +49,6 @@ section{
 }
 
 .songs li:hover{
-    background-color: #f2f2f2;
+    background-color: #000;
+    color: #85c803;
 }
