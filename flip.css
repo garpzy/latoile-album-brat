@@ -1,8 +1,6 @@
 /* Conteneur principal avec perspective 3D */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
   perspective: 1000px; /* Donne la profondeur 3D */
 }
 

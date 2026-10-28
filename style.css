@@ -3,6 +3,10 @@
     --accent-color:#85c803;
 }
 
+.crash-page {
+    --accent-color: red; 
+}
+
 *{
         box-sizing: border-box;
 }
@@ -15,24 +19,6 @@ a{
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    background-image: url(assets/brat-summer.png);
-    background-size: cover;
-}   
-
-.surligne{
-    background-color: var(--accent-color);
-    color: var(--main-text-color);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 0 4px;
-}
-
-.surligne:hover{
-    background-color: var(--main-text-color);
-    color: var(--accent-color);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 0 4px; 
 }
 
 nav{
@@ -65,56 +51,3 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.songs{
-    list-style: none;
-    padding-inline-start: 0;
-}
-
-nav.ariane {
-    display: flex;
-    justify-content: left;
-}
-
-nav.ariane ul{
-    gap: 10px;
-
-}
-
-nav.ariane ul li a{
-    font-weight: normal;
-}
-
-nav.ariane ul li a::after{
-    display: none;
-}
-
-img{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)  ;
-    width: 100%;
-}
-
-section.album-section{
-    display: flex;
-    gap: 20px;
-}
-
-ol li::marker {
-  color: var(--accent-color);
-  font-weight: bold;
-  font-size: 1.2rem;
-  background-color: var(--main-text-color);
-}
-
-.left{
-    width: 30vw;
-    padding: 20px;
-}
-
-.right{
-    width: 50vw;
-    padding: 20px;
-}
-
-p.description {
-    
-}
