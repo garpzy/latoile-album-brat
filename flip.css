@@ -1,7 +1,19 @@
+.album-link{
+    display: block;
+    width: 25%;
+}
+
 /* Conteneur principal avec perspective 3D */
 .flip-card {
-  background-color: transparent;
-  perspective: 1000px; /* Donne la profondeur 3D */
+  /* background-color: transparent;
+  width: 200px;
+  height: 100px;
+  perspective: 1000px;  */
+      position: relative;
+    background-color: transparent;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    perspective: 1000px;
 }
 
 /* Élément interne qui effectue la rotation */
@@ -10,7 +22,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 0.9s;
   transform-style: preserve-3d; /* Indique que les enfants sont en 3D */
 }
 
